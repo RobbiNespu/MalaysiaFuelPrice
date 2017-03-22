@@ -37,7 +37,8 @@ var app = {
 		if (navigator.connection.type == Connection.NONE) {
 		  navigator.notification.alert('An internet connection is required to continue');
 		} else {
-		  window.location="https://malaysia-fuel-price.firebaseapp.com/";
+		  //window.location="https://malaysia-fuel-price.firebaseapp.com/";
+		  window.open('https://malaysia-fuel-price.firebaseapp.com/', '_system', 'location=no')
 		}
 
     },
