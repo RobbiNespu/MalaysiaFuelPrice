@@ -40,7 +40,9 @@ var app = {
 		  //window.location="https://malaysia-fuel-price.firebaseapp.com/";
 		  window.open('https://malaysia-fuel-price.firebaseapp.com/', '_self', 'location=no')
 		}
-
+                document.addEventListener("backbutton", function(e){
+			navigator.app.exitApp();
+		}, false);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
