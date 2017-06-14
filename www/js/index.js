@@ -41,6 +41,7 @@ var app = {
 		  window.open('https://malaysia-fuel-price.firebaseapp.com/', '_self', 'location=no')
 		}
                 document.addEventListener("backbutton", function(e){
+			e.preventDefault();
 			navigator.app.exitApp();
 		}, false);
     },
